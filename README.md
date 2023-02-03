@@ -9,7 +9,7 @@
 - HTML
 
 ### Back End
-- Node JS
+- NodeJS
 - Express
 
 ### Notes
