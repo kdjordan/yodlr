@@ -8,7 +8,7 @@
 		<header class="border-b-2 bg-slate-200">
 			<Navbar />
 		</header>
-		<main className="h-screen">
+		<main>
 			<router-view v-slot="{ Component }">
 				<transition name="fade" mode="out-in">
 					<component :is="Component" />
@@ -21,7 +21,7 @@
 <style>
 	.fade-enter-active,
 	.fade-leave-active {
-		transition: opacity .5s;
+		transition: opacity .8s;
 	}
 	.fade-enter,
 	.fade-leave-to {

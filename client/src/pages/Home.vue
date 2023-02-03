@@ -19,7 +19,7 @@
 			<div class="flex w-2/3 m:w-1/2 justify-around">
 				<button
 					@click="goTo('sign-up')"
-					class="py-2 px-4 bg-gray-600 rounded shadow-md border border-transparent text-zinc-200 tracking-wider text-xl hover:bg-transparent hover:text-lime-600 hover:border hover:border-lime-600"
+					class="py-2 px-4 bg-gray-600 rounded shadow-md border border-transparent text-zinc-200 tracking-wider text-xl transition-all hover:bg-transparent hover:text-lime-600 hover:border hover:border-lime-600 "
 				>
 					SIGN UP
 				</button>

@@ -22,7 +22,7 @@
 </script>
 
 <template>
-	<div class="container mx-auto w-full min-h-screen pb-10">
+	<div class="container mx-auto w-full pb-10 h-screen mt-8">
 		<h2 class="text-3xl text-center mt-8 mb-2">
 			WELCOME BACK ADMIN !
 		</h2>
@@ -35,10 +35,10 @@
 			<div
 				v-for="(item, index) in data"
 				:key="index"
-				class="w-2/3 md:w-1/2 lg:w-1/4 p-4 mx-auto bg-gray-400 rounded-md backdrop-filter backdrop-blur-md bg-opacity-20 mt-8 border border-gray-800"
+				class="w-2/3 md:w-1/2 lg:w-1/4 p-4 mx-auto bg-gray-400 rounded-md backdrop-filter backdrop-blur-md bg-opacity-20 mt-8 border border-gray-800 transition-all hover:bg-gray-500 cursor-pointer"
 			>
 				<div
-					class="flex flex-col items-center pb-10 hover:bg-gray-600 cursor-pointer"
+					class="flex flex-col items-center pb-10 "
 					@click="gotoUser(`${item.id}`)"
 				>
 					<div
