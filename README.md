@@ -1,10 +1,10 @@
 ## YODLR Take Home
 
 ### Front End
-The client application is built using VueJS 3. For styling CSS, Tailwind is employed. Axios is used for API calls.  
+The client application is built using VueJS 3 and Vite. For styling with CSS, Tailwind is employed. Axios is used for API calls.  
 
 ### Back End
-The server application is written in NodeJS using the Epress Framework. There is no DB just a static file holding intial user information. All users added will be removed when the server is halted.
+The server application is written in NodeJS using the Express Framework. There is no DB, just a static file holding intial user information. All users added will be removed when the server is halted. Some users are provided at startup.
 
 ### Notes
 The application is fully responsive and handles all basic CRUD operations.
