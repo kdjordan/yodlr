@@ -1,3 +1,8 @@
+/**
+ * User Sign Up Component that is rendered when path ('sign-up') is visited
+ * Shows a form that allows user to sign-up
+ * If successfull, pushes user to Admin component
+ */
 <script>
 	import { ref } from 'vue';
 	import * as Api from '../Api.js';

@@ -1,6 +1,5 @@
 /**
-/*	Header navigation component.
-/* 	@params : none
+*	Header navigation component.
 */
 <template>
 	<div

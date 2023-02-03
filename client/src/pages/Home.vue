@@ -1,3 +1,6 @@
+/**
+ * Home Component that is rendered when path ('/') is visited
+ */
 <template>
 	<div>
 		<div

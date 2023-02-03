@@ -1,3 +1,7 @@
+/**
+ * Admin Component that is rendered when path ('/admin') is visited
+ * Shows all users - allows for click on user to goto User detail ('/users/:id')
+ */
 <script>
 	import * as Api from '../Api.js';
 	import { ref, onMounted } from 'vue';

@@ -1,3 +1,8 @@
+/**
+ * UserDetail Component that is rendered when dynamic path ('/users/:id') is visited
+ * Shows user details and allows for updating of user information 
+ * If successfull, pushes user back to Admin component
+ */
 <script>
 	import * as Api from '../Api.js';
 	import { ref, onMounted } from 'vue';

@@ -1,3 +1,6 @@
+/**
+ * Error (404) Component that is rendered when any path not defined in routes.js is attempted
+ */
 <template>
     <div class="container mx-auto w-full flex flex-col items-center h-screen mt-24">
         <div class="flex flex-col gap-4 md:gap-8 items-center p-6 border border-1-gray-700 backdrop-filter backdrop-blur-md bg-opacity-10 rounded-md mb-8">
