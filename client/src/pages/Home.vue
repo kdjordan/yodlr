@@ -12,7 +12,7 @@
 				>
 					YODLR
 				</h1>
-				<div class="text-xl text-gray-200 italic">
+				<div class="text-xl text-gray-600 italic">
 					Your Journey Begins Here...
 				</div>
 			</div>
