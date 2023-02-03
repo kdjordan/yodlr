@@ -32,7 +32,7 @@
 <template>
 	<div class="container mx-auto w-full">
 		<div class="flex flex-col h-screen">
-			<h2 class="text-3xl text-center mt-16 mb-8">SIGN UP</h2>
+			<h2 class="text-3xl text-center mt-8 mb-8">SIGN UP</h2>
 			<div
 				class="w-5/6 md:w-3/4 lg:w-1/3 p-4 mx-auto bg-gray-400 rounded-md backdrop-filter backdrop-blur-md bg-opacity-50"
 			>

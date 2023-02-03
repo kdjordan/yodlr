@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div
-			class="container mx-auto w-full flex flex-col items-center h-screen mt-24"
+			class="container mx-auto w-full flex flex-col items-center h-screen mt-8"
 		>
 			<div
 				class="flex flex-col items-center p-6 border border-1-gray-700 backdrop-filter backdrop-blur-md bg-opacity-10 rounded-md mb-8"
@@ -13,7 +13,7 @@
 					YODLR
 				</h1>
 				<div class="text-xl text-gray-200 italic">
-					Your Journey begins Here...
+					Your Journey Begins Here...
 				</div>
 			</div>
 			<div class="flex w-2/3 m:w-1/2 justify-around">

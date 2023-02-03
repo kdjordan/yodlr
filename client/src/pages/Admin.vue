@@ -22,8 +22,8 @@
 </script>
 
 <template>
-	<div class="container mx-auto w-full">
-		<h2 class="text-3xl text-center mt-16 mb-2">
+	<div class="container mx-auto w-full min-h-screen pb-10">
+		<h2 class="text-3xl text-center mt-8 mb-2">
 			WELCOME BACK ADMIN !
 		</h2>
 		<h2 class="text-xl text-center mb-8 uppercase">
@@ -35,14 +35,14 @@
 			<div
 				v-for="(item, index) in data"
 				:key="index"
-				class="w-full max-w-sm border border-gray-200 rounded-lg shadow bg-gray-800 backdrop-filter backdrop-blur-md bg-opacity-50"
+				class="w-2/3 md:w-1/2 lg:w-1/4 p-4 mx-auto bg-gray-400 rounded-md backdrop-filter backdrop-blur-md bg-opacity-20 mt-8 border border-gray-800"
 			>
 				<div
 					class="flex flex-col items-center pb-10 hover:bg-gray-600 cursor-pointer"
 					@click="gotoUser(`${item.id}`)"
 				>
 					<div
-						class="flex items-center justify-center mx-auto w-24 h-24 mb-6 mt-6 bg-lime-600 rounded-full shadow-lg text-3xl font-bold text-gray-800"
+						class="flex items-center justify-center mx-auto w-24 h-24 mb-6 mt-6 bg-gray-600 rounded-full shadow-lg text-3xl font-bold text-lime-400"
 					>
 						{{ item.firstName.slice(0, 1)
 						}}{{ item.lastName.slice(0, 1) }}
@@ -55,7 +55,7 @@
 					}}</span>
 					<div class="flex mt-4 space-x-3 md:mt-6">
 						<span
-							class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-blue-300 dark:bg-blue-600"
+							class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-600 bg-lime-400 rounded-lg"
 							>STATUS : {{ item.state }}</span
 						>
 						<span

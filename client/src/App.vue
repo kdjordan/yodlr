@@ -4,8 +4,8 @@
 </script>
 
 <template>
-	<div class="flex flex-col min-w-full">
-		<header class="border-b-2 bg-slate-200 w-full">
+	<div class="flex flex-col">
+		<header class="border-b-2 bg-slate-200">
 			<Navbar />
 		</header>
 		<main className="h-screen">

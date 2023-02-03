@@ -24,7 +24,7 @@
 		methods: {
 			async deleteUser() {
 				try {
-					await Api.deleteUser(this.data, this.data.id);
+					await Api.deleteUser(this.data, this.data.id);	
 					this.$router.push('/admin');
 				} catch (e) {
 					this.$router.push('/error');
@@ -44,7 +44,7 @@
 
 <template>
 	<div
-		class="container mx-auto w-full max-w-sm p-4 mt-16 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700"
+	class="w-5/6 md:w-3/4 lg:w-1/3 p-4 mx-auto bg-gray-400 rounded-md backdrop-filter backdrop-blur-md bg-opacity-50 mt-8"
 	>
 		<form class="space-y-6" @submit.prevent="updateUser">
 			<h5
