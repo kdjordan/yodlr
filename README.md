@@ -1,4 +1,5 @@
 ## YODLR Take Home
+<img src="./yodlr.gif" width="900px">
 
 ### Front End
 The client application is built using VueJS 3 and Vite. For styling with CSS, Tailwind is employed. Axios is used for API calls.  

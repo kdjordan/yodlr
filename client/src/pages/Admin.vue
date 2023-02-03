@@ -42,7 +42,7 @@
 					@click="gotoUser(`${item.id}`)"
 				>
 					<div
-						class="flex items-center justify-center mx-auto w-24 h-24 mb-6 mt-6 bg-gray-600 rounded-full shadow-lg text-3xl font-bold text-lime-400"
+						class="flex items-center justify-center mx-auto w-24 h-24 mb-6 mt-6 bg-gray-600 rounded-full shadow-2xl text-3xl font-bold text-lime-400"
 					>
 						{{ item.firstName.slice(0, 1)
 						}}{{ item.lastName.slice(0, 1) }}
