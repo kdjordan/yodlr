@@ -9,7 +9,6 @@ export async function getUsers() {
 
 export async function addUser(data) {
 	const res = await axios.post(`${BASE_URL}/users`, data);
-	console.log('got ', res);
 	return res;
 }
 

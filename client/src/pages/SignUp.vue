@@ -1,3 +1,34 @@
+<script>
+	import { ref } from 'vue';
+	import * as Api from '../Api.js';
+
+	export default {
+		setup() {
+			const firstName = ref('');
+			const lastName = ref('');
+			const email = ref('');
+			const password = ref('');
+
+			return { firstName, lastName, email, password };
+		},
+		methods: {
+			async submitForm() {
+				try {
+					await Api.addUser({
+						firstName: firstName.value,
+						lastName: lastName.value,
+						email: email.value,
+						password: password.value,
+					});
+					this.$router.push('/admin');
+				} catch (error) {
+					this.$router.push('/error');
+				}
+			},
+		},
+	};
+</script>
+
 <template>
 	<div class="container mx-auto w-full">
 		<div class="flex flex-col h-screen">
@@ -73,34 +104,3 @@
 		</div>
 	</div>
 </template>
-
-<script lang="js">
-	import { ref } from 'vue';
-	import * as Api from '../Api.js'
-
-	export default {
-	  setup() {
-	    const firstName = ref('');
-	    const lastName = ref('');
-	    const email = ref('');
-	    const password = ref('');
-
-	    const submitForm = async () => {
-	        try {
-	            await Api.addUser({
-	                firstName:firstName.value,
-	                lastName: lastName.value,
-	                email: email.value,
-	                password: password.value
-	            })
-	            this.$router.push('/admin')
-	        } catch (error) {
-	            this.$rouer.push('/404')
-	        }
-	        console.log('set up ', res.data)
-	    };
-
-	    return { firstName, lastName, email, password, submitForm };
-	  },
-	};
-</script>

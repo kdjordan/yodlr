@@ -15,31 +15,30 @@
 					const response = await Api.getUser(id.value);
 					data.value = response.data;
 				} catch (error) {
-					this.$router.push('/error')
+					this.$router.push('/error');
 				}
 			});
 
 			return { data, id };
 		},
-        methods : {
-            async deleteUser() {
-                try {
-					await Api.deleteUser(this.data, this.data.id)
-					this.$router.push('/admin')
-				} catch(e) {
-					this.$router.push('/error')
+		methods: {
+			async deleteUser() {
+				try {
+					await Api.deleteUser(this.data, this.data.id);
+					this.$router.push('/admin');
+				} catch (e) {
+					this.$router.push('/error');
 				}
-                
-            },
-            async updateUser() {
-				try{
-					await Api.updateUser(this.data, this.data.id)
-					this.$router.push('/admin')
-				} catch(e) {
-					this.$router.push('/error')
+			},
+			async updateUser() {
+				try {
+					await Api.updateUser(this.data, this.data.id);
+					this.$router.push('/admin');
+				} catch (e) {
+					this.$router.push('/error');
 				}
-            }
-        }
+			},
+		},
 	};
 </script>
 
@@ -48,34 +47,36 @@
 		class="container mx-auto w-full max-w-sm p-4 mt-16 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700"
 	>
 		<form class="space-y-6" @submit.prevent="updateUser">
-			<h5 class="text-xl font-medium  dark:text-white text-center uppercase tracking-widest">
+			<h5
+				class="text-xl font-medium dark:text-white text-center uppercase tracking-widest"
+			>
 				Edit User ID :: {{ data.id }}
 			</h5>
 			<div>
 				<label
 					for="firstName"
-					class="block mb-2 text-sm font-medium  dark:text-white"
+					class="block mb-2 text-sm font-medium dark:text-white"
 					>First Name</label
 				>
 				<input
 					type="text"
 					name="firstName"
 					id="firstName"
-					class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+					class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
 					v-model="data.firstName"
 				/>
 			</div>
 			<div>
 				<label
 					for="lastName"
-					class="block mb-2 text-sm font-medium  dark:text-white"
+					class="block mb-2 text-sm font-medium dark:text-white"
 					>Last Name</label
 				>
 				<input
 					type="text"
 					name="lastName"
 					id="lastName"
-					class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+					class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
 					v-model="data.lastName"
 				/>
 			</div>
@@ -103,7 +104,7 @@
 				</button>
 				<button
 					class="py-2 px-4 bg-gray-400 rounded shadow-md border border-transparent text-zinc-200 tracking-wider text-xl hover:bg-transparent hover:text-red-600 hover:border hover:border-red-600"
-                    @click.prevent="deleteUser"
+					@click.prevent="deleteUser"
 				>
 					DELETE
 				</button>
